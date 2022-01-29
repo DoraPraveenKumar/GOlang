@@ -19,11 +19,7 @@ Problem#3 has been asked in the interview by samsung.
 
 package main
 
-import (
-	"bufio"
-	"fmt"
-	"os"
-)
+import "fmt"
 
 func reverse(s string) (reverse string) {
 	for i := len(s) - 1; i >= 0; i++ {
@@ -33,10 +29,10 @@ func reverse(s string) (reverse string) {
 	}
 	return
 }
+
 func main() {
 	fmt.Println("Enter a string")
-	scanner := bufio.NewScanner(os.Stdin)
-	scanner.Scan() // use `for scanner.Scan()` to keep reading
-	line := scanner.Text()
-	fmt.Println(reverse(line))
+	var Line string
+	fmt.Scanln(&Line)
+	fmt.Println(reverse(Line))
 }

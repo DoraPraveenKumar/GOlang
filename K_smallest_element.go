@@ -43,7 +43,6 @@ func kthSmallestElement() int {
 }
 
 func main() {
-
 	var a int
 	fmt.Println("Enter the length of array")
 	fmt.Scanln(&n)
