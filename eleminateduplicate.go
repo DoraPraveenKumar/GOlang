@@ -19,24 +19,25 @@ Problem#3 has been asked in the interview by samsung.
 
 package main
 
-package main
 import (
-    "fmt"
-    "strings")
+	"fmt"
+	"strings"
+)
 
-func RunLengthEncode(input string){
-    s:=string(input[0])
-  for i:=0;i<(len(input));i++ {
-      if strings.Contains(s,string(input[i]))==false{
-          s+=string(input[i])
-      }
-    }
-    fmt.Println(s)
+func RunLengthEncode(input string) {
+	s := string(input[0])
+	for i := 0; i < (len(input)); i++ {
+		if strings.Contains(s, string(input[i])) == false {
+			s += string(input[i])
+		}
+	}
+	fmt.Println(s)
 }
-                           //res1 := strings.Count(str1, "o")                          
+
+//res1 := strings.Count(str1, "o")
 func main() {
-    var S string
-    fmt.Scanln(&S)
-    RunLengthEncode(S)
- //Enter your code here. Read input from STDIN. Print output to STDOUT
+	var S string
+	fmt.Scanln(&S)
+	RunLengthEncode(S)
+	//Enter your code here. Read input from STDIN. Print output to STDOUT
 }
